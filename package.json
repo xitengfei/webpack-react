@@ -21,8 +21,13 @@
     "webpack-merge": "^5.1.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
     "mini-css-extract-plugin": "^1.1.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.4"
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass-loader": "^10.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

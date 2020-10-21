@@ -10,6 +10,36 @@ module.exports = merge(common, {
   output: {
     filename: 'js/[name].[hash:8].bundle.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader'
+        ]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'less-loader',
+          'postcss-loader'
+        ]
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          'postcss-loader'
+        ]
+      }
+    ]
+  },
   devServer: {
     contentBase: path.resolve(__dirname, '../dist'),
     open: true,
